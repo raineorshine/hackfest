@@ -89,13 +89,24 @@ header h1 {
 
 #message_form {
   position:absolute;
-  top:200px; left:200px;
+  top:-20px; left:250px;
+  display:none; 
+}
+.box {
   background-color:#fff;
   border:1px solid #999;
   padding:20px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
-  display:none; }
+  width: 200px;
+}
+#response {
+	display: none;
+	position: absolute;
+	left: 400px;
+	top: 40px;
+	background-color: #CCDCFF;
+}
 
 label,input,textarea {
   float:left; clear:both;

@@ -28,19 +28,31 @@
       <div id="big_squid"></div>
       <div id="star_starfish"></div>
       <div id="drunk_clam"></div>
-      <div id="message_form">
-        <form>
-          <label>To:</label>
-          <input id="to" type="text" name="to" />
-          <label>Message:</label>
-          <textarea id="message" name="message"></textarea>
-        </form>
+      <div id="message_form" class="box">
+		  <h1>Get local recommendations from your ocean friends!</h1>
+          <label>Where:</label>
+		  <input id="place" type="text" value="boulder, co" />
+          <label>What are you looking for?</label>
+          <input id="query" type="text" value="italian"></input>
+          <label>Ask:</label>
+		  <!--<input id="to" type="text" name="to" />-->
+		  <select id="toSelect">
+			  <option value="hipster_octopus">Hipster Octopus</option>
+			  <option value="big_squid">Big Squid</option>
+			  <option value="star_starfish">Star Starfish</option>
+			  <option value="drunk_clam">Drunk Clam</option>
+		  </select>
+		  <input id="go" type="button" value="Go!!!" />
       </div>
+	  <div id="response" class="box">
+	  </div>
     </div>
   </div>
 
   <script type="text/javascript" src="resources/jquery-1.5.2.js"></script>
   <script type="text/javascript" src="thepower.js"></script>
+  <script type="text/javascript" src="rjs.1.4.js"></script>
+  <script type="text/javascript" src="rjs-dom.2.0.js"></script>
 
 </body>
 </html>
